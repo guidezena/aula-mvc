@@ -9,7 +9,7 @@ class Funcionario extends Model
 {
     use HasFactory;
 
-    protected $fillabe =['id',
+    protected $fillable =['id',
                         'nome',
                         'endereco',
                         'email',
