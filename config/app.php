@@ -174,6 +174,8 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        //provider para controle de perfil de usuario
+        Spatie\Permission\PermissionServiceProvider::class,
 
     ],
 
