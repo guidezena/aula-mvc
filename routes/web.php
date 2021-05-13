@@ -29,9 +29,11 @@ Route::get('/avisos', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index']);
 
 Route::group(['prefix'=>'clientes'], function(){
 
-    Route::get('/listar', [App\Http\Controllers\ClientesController::class, 'listar'
+Route::get('/listar', [App\Http\Controllers\ClientesController::class, 'listar'
     ])->middleware('auth');
+
 });
